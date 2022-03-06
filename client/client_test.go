@@ -36,7 +36,7 @@ func TestSend1(t *testing.T) {
 		log.Printf("[main] err: %v", err)
 	}
 	defer func() {
-		conn.Close()
+		_ = conn.Close()
 	}()
 	time.Sleep(2 * time.Second)
 	// assembly option of header
