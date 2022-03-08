@@ -24,9 +24,8 @@ var DefaultOption = &Option{
 	CodeType:    core.GobType,
 }
 
-// 声明 server 类型，其上挂载了一些方法
-type Server struct {
-}
+// Server 声明 server 类型，其上挂载了一些方法
+type Server struct {}
 
 func NewServer() *Server {
 	return &Server{}
